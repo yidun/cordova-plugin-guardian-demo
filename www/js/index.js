@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var token = null;
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -37,6 +39,10 @@ var app = {
         });
         document.getElementById('getTokenBtn').addEventListener('click', function () {
           instance && instance.getToken();
+        });
+        document.getElementById('copyTokenBtn').addEventListener('click', function () {
+          cordova.plugins.clipboard.copy(token || '');
+          alert(`copy token: ${token || ''}`)          
         });
         document.getElementById('openSeniorCollectBtn').addEventListener('click', function () {
           instance && instance.setSeniorCollectStatus(true);
@@ -61,6 +67,7 @@ var app = {
         // getToken
         if (ev['is_get_token_success'] === true) {
           this.$actionEl.innerText = `token：${ev['token']}`
+          token = ev['token']
           // do something ....
           return
         } else if (ev['is_get_token_success'] === false) {
