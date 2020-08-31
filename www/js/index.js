@@ -31,7 +31,7 @@ var app = {
         const callback = this.handleDetectCb.bind(this);
         let _self = this;
         document.getElementById('initBtn').addEventListener('click', function () {
-          instance = new YidunAnticheat({
+          instance = new YidunGuardian({
             productNumber: '从易盾申请的productNumber',
             isCollectApk: true,
             isCollectSensor: true

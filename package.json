@@ -1,8 +1,8 @@
 {
-  "name": "com.example.yidunanticheat",
-  "displayName": "cordova-plugin-anticheat-demo",
+  "name": "com.example.yidunguardian",
+  "displayName": "cordova-plugin-guardian-demo",
   "version": "1.0.0",
-  "description": "A sample cordova plugin anticheat demo.",
+  "description": "A sample cordova plugin guardian demo.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-plugin-yidun-anticheat": "file:../cordova-plugin-anticheat",
+    "cordova-plugin-yidun-guardian": "^1.0.0",
     "eeschiavo-cordova-plugin-clipboard": "^1.0.2"
   },
   "devDependencies": {
@@ -23,8 +23,8 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-yidun-anticheat": {},
-      "eeschiavo-cordova-plugin-clipboard": {}
+      "eeschiavo-cordova-plugin-clipboard": {},
+      "cordova-plugin-yidun-guardian": {}
     },
     "platforms": [
       "android"
