@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-plugin-yidun-guardian": "^1.0.0",
+    "@yidun/cordova-plugin-guardian": "^1.0.0",
     "eeschiavo-cordova-plugin-clipboard": "^1.0.2"
   },
   "devDependencies": {
